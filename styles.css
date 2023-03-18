@@ -5,7 +5,57 @@ body {
   background-size: 100%;
   cursor: url("./asset/img/hammer.png"), auto;
 }
-
+p {
+  text-align: center;
+}
+#writeUsername {
+  position: absolute;
+  margin-top: 2vh;
+  width: 25vw;
+  font-size: 17px;
+  background-color: #186205;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  font-family: "Crimson Text", cursive;
+  box-shadow: inset 7px -15px #0b2a03;
+  display: flex;
+}
+input {
+  width: 110px;
+  align-items: center;
+  margin-left: 6px;
+  margin-right: 3px;
+  cursor: auto;
+}
+#btnValidate {
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+  margin-left: 6px;
+  width: 60px;
+}
+#displayUsername {
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 4px;
+  background-color: #186205;
+  box-shadow: inset 7px -15px #0b2a03;
+  font-family: "Crimson Text", cursive;
+  position: absolute;
+  display: none;
+}
+#name {
+  color: white;
+  padding: 4px;
+  font-size: 25px;
+  font-family: "Crimson Text", cursive;
+  margin-left: 10px;
+}
 h1 {
   text-align: center;
   color: #873e23;
@@ -16,7 +66,6 @@ h1 {
 
 #parameters {
   display: flex;
-  margin-bottom: 4vh;
 }
 span.gameElements {
   background-color: white;
@@ -48,6 +97,20 @@ span.gameElements {
   font-family: "Crimson Text", cursive;
   box-shadow: inset 7px -15px #0b2a03;
 }
+#dashboard {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 3px;
+  background-color: #186205;
+  width: 15vw;
+  height: 30vh;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Crimson Text", cursive;
+  box-shadow: inset 7px -15px #0b2a03;
+  overflow-y: auto;
+}
 #game {
   display: flex;
   flex-direction: column;
@@ -57,6 +120,25 @@ span.gameElements {
   justify-content: center;
 }
 
+.imgHole {
+  width: 160px;
+  height: 100px;
+  margin: 5%;
+}
+
+.imgMole {
+  width: 150px;
+  height: 100px;
+  margin: 5%;
+  display: none;
+}
+
+#buttonStart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
 #btnStart {
   background-color: brown;
   border: none;
@@ -70,18 +152,10 @@ span.gameElements {
   text-align: center;
   box-shadow: 10px 5px 5px rgb(37, 3, 3);
 }
-.imgHole {
-  width: 160px;
-  height: 100px;
-  margin: 5%;
-}
-#buttonStart {
-  text-align: center;
-  margin-top: 5vh;
-}
-.imgMole {
-  width: 150px;
-  height: 100px;
-  margin: 5%;
-  display: none;
+#btnRefresh {
+  width: 25px;
+  height: 25px;
+  margin-left: 2vw;
+  color: rgb(62, 14, 14);
+  cursor: pointer;
 }

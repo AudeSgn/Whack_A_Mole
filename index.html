@@ -9,13 +9,32 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- <img src="./asset/img/hammer.jpg" id="cursor" alt="Curseur personnalisé"></div> -->
     <header>
       <h1>Whack a Mole !</h1>
     </header>
+
     <div id="parameters">
       <div id="scoreBoard" class="headerElements">Score : <span id="score" class="gameElements">0</span> points</div>
-      <div id="timer" class="headerElements">Temps : <span id="timerParty" class="gameElements">20</span> secondes</div>
+      <div id="timer" class="headerElements">Temps : <span id="timerParty" class="gameElements">30</span> secondes</div>
+    </div>
+    <div id="home">
+      <div id="playerName">
+        <div id="writeUsername">
+          <label>Choisi ton pseudo</label>
+          <input type="text" id="username" />
+
+          <div id="buttonsHome">
+            <button type="button" id="btnValidate">Valider</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p id="displayUsername">Ton pseudo : <span id="name"></span></p>
+    </div>
+    <div id="dashboard">
+      <p>Ton score</p>
+      <div id="tableDashboard"></div>
     </div>
     <div id="game">
       <div class="row">
@@ -63,6 +82,10 @@
 
       <div id="buttonStart">
         <button type="button" id="btnStart">Play</button>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-clockwise" id="btnRefresh" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+          <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+        </svg>
       </div>
     </div>
 
